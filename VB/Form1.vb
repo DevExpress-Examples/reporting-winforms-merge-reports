@@ -1,11 +1,11 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 Imports DevExpress.XtraReports.UI
 
 Namespace ReportMerging
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
@@ -77,7 +77,7 @@ Namespace ReportMerging
 			report1.PrintingSystem.ContinuousPageNumbering = False
 
 			' Create a booklet.
-			Dim centerPageIndex As Integer = Convert.ToInt32((report1.Pages.Count - 1) / 2)
+			Dim centerPageIndex As Integer = Convert.ToInt32((report1.Pages.Count - 1) \ 2)
 			For i As Integer = 0 To centerPageIndex - 1
 				report1.Pages.Insert(i * 2 + 1, report1.Pages(report1.Pages.Count - 1))
 			Next i

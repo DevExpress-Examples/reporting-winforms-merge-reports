@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace ReportMerging
+﻿Namespace ReportMerging
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -32,33 +30,39 @@ Namespace ReportMerging
 			' 
 			' button1
 			' 
-			Me.button1.Location = New System.Drawing.Point(119, 33)
+			Me.button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+			Me.button1.Location = New System.Drawing.Point(68, 43)
 			Me.button1.Name = "button1"
-			Me.button1.Size = New System.Drawing.Size(78, 31)
+			Me.button1.Size = New System.Drawing.Size(218, 37)
 			Me.button1.TabIndex = 0
-			Me.button1.Text = "1 + 2"
+			Me.button1.Text = "Combine two reports"
 			Me.button1.UseVisualStyleBackColor = True
-'			Me.button1.Click += New System.EventHandler(Me.button1_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.button1.Click += new System.EventHandler(this.button1_Click);
 			' 
 			' button2
 			' 
-			Me.button2.Location = New System.Drawing.Point(122, 97)
+			Me.button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+			Me.button2.Location = New System.Drawing.Point(68, 112)
 			Me.button2.Name = "button2"
-			Me.button2.Size = New System.Drawing.Size(75, 38)
+			Me.button2.Size = New System.Drawing.Size(218, 37)
 			Me.button2.TabIndex = 1
-			Me.button2.Text = "1, 2"
+			Me.button2.Text = "Merge two reports"
 			Me.button2.UseVisualStyleBackColor = True
-'			Me.button2.Click += New System.EventHandler(Me.button2_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.button2.Click += new System.EventHandler(this.button2_Click);
 			' 
 			' button3
 			' 
-			Me.button3.Location = New System.Drawing.Point(122, 167)
+			Me.button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, (CByte(0)))
+			Me.button3.Location = New System.Drawing.Point(68, 181)
 			Me.button3.Name = "button3"
-			Me.button3.Size = New System.Drawing.Size(75, 37)
+			Me.button3.Size = New System.Drawing.Size(218, 37)
 			Me.button3.TabIndex = 2
-			Me.button3.Text = "1, -1"
+			Me.button3.Text = "Reorder pages"
 			Me.button3.UseVisualStyleBackColor = True
-'			Me.button3.Click += New System.EventHandler(Me.button3_Click);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.button3.Click += new System.EventHandler(this.button3_Click);
 			' 
 			' Form1
 			' 
@@ -69,7 +73,7 @@ Namespace ReportMerging
 			Me.Controls.Add(Me.button2)
 			Me.Controls.Add(Me.button1)
 			Me.Name = "Form1"
-			Me.Text = "Form1"
+			Me.Text = "Merge Report Pages"
 			Me.ResumeLayout(False)
 
 		End Sub

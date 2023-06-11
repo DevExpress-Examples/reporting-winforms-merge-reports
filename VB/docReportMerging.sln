@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "docReportMerging", "docReportMerging.vbproj", "{15C6B13A-0055-478F-8981-59C8C166E836}"
 EndProject

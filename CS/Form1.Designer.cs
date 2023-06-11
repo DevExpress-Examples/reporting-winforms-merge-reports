@@ -30,31 +30,34 @@ namespace ReportMerging {
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(119, 33);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(68, 43);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 31);
+            this.button1.Size = new System.Drawing.Size(218, 37);
             this.button1.TabIndex = 0;
-            this.button1.Text = "1 + 2";
+            this.button1.Text = "Combine two reports";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(122, 97);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(68, 112);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 38);
+            this.button2.Size = new System.Drawing.Size(218, 37);
             this.button2.TabIndex = 1;
-            this.button2.Text = "1, 2";
+            this.button2.Text = "Merge two reports";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(122, 167);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(68, 181);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 37);
+            this.button3.Size = new System.Drawing.Size(218, 37);
             this.button3.TabIndex = 2;
-            this.button3.Text = "1, -1";
+            this.button3.Text = "Reorder pages";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -67,7 +70,7 @@ namespace ReportMerging {
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Merge Report Pages";
             this.ResumeLayout(false);
 
         }

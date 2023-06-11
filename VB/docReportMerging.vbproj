@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,17 +9,19 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace></RootNamespace>
     <AssemblyName>ReportMerging</AssemblyName>
-    <SccProjectName></SccProjectName>
-    <SccLocalPath></SccLocalPath>
-    <SccAuxPath></SccAuxPath>
-    <SccProvider></SccProvider>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <OptionExplicit>On</OptionExplicit>
-    <OptionCompare>Binary</OptionCompare>
-    <OptionStrict>Off</OptionStrict>
-    <OptionInfer>On</OptionInfer>
-    <FileUpgradeFlags></FileUpgradeFlags>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <OldToolsVersion>2.0</OldToolsVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
@@ -37,6 +39,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,44 +65,65 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Printing.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Pdf.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Office.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.RichEdit.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.RichEdit.v22.2.Export">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Printing.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Drawing.v22.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Data.v22.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Data.Desktop.v22.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Utils.v22.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.Charts.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v13.1.UI , Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.XtraCharts.v22.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
-      <Private>True</Private>
+    <Reference Include="DevExpress.XtraPrinting.v22.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v22.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v22.2.Extensions">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v22.2.UI ">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v22.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v22.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v22.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -104,6 +131,17 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.vb">
@@ -119,8 +157,9 @@
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="XtraReport1.resx">

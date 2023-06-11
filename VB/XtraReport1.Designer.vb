@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace ReportMerging
+﻿Namespace ReportMerging
 	Partial Public Class XtraReport1
 		''' <summary>
 		''' Required designer variable.
@@ -33,7 +31,7 @@ Namespace ReportMerging
 			Me.xrPageInfo1 = New DevExpress.XtraReports.UI.XRPageInfo()
 			Me.topMarginBand1 = New DevExpress.XtraReports.UI.TopMarginBand()
 			Me.bottomMarginBand1 = New DevExpress.XtraReports.UI.BottomMarginBand()
-			CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).BeginInit()
 			' 
 			' Detail
 			' 
@@ -47,7 +45,7 @@ Namespace ReportMerging
 			' xrLabel1
 			' 
 			Me.xrLabel1.BackColor = System.Drawing.Color.Silver
-			Me.xrLabel1.Font = New System.Drawing.Font("Times New Roman", 12F)
+			Me.xrLabel1.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F)
 			Me.xrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(275F, 0F)
 			Me.xrLabel1.Name = "xrLabel1"
 			Me.xrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -58,19 +56,22 @@ Namespace ReportMerging
 			' PageHeader
 			' 
 			Me.PageHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() { Me.xrPageInfo2})
-			Me.PageHeader.HeightF = 33F
+			Me.PageHeader.HeightF = 143.75F
 			Me.PageHeader.Name = "PageHeader"
 			Me.PageHeader.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F)
 			Me.PageHeader.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
 			' 
 			' xrPageInfo2
 			' 
-			Me.xrPageInfo2.BackColor = System.Drawing.Color.Silver
-			Me.xrPageInfo2.Font = New System.Drawing.Font("Times New Roman", 12F)
+			Me.xrPageInfo2.BackColor = System.Drawing.Color.White
+			Me.xrPageInfo2.Font = New DevExpress.Drawing.DXFont("Times New Roman", 72F)
 			Me.xrPageInfo2.LocationFloat = New DevExpress.Utils.PointFloat(275F, 0F)
 			Me.xrPageInfo2.Name = "xrPageInfo2"
 			Me.xrPageInfo2.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
-			Me.xrPageInfo2.SizeF = New System.Drawing.SizeF(100F, 25F)
+			Me.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.Number
+			Me.xrPageInfo2.SizeF = New System.Drawing.SizeF(180.2083F, 127.0833F)
+			Me.xrPageInfo2.StylePriority.UseBackColor = False
+			Me.xrPageInfo2.StylePriority.UseFont = False
 			Me.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
 			' 
 			' PageFooter
@@ -84,7 +85,7 @@ Namespace ReportMerging
 			' xrPageInfo1
 			' 
 			Me.xrPageInfo1.BackColor = System.Drawing.Color.Silver
-			Me.xrPageInfo1.Font = New System.Drawing.Font("Times New Roman", 12F)
+			Me.xrPageInfo1.Font = New DevExpress.Drawing.DXFont("Times New Roman", 12F)
 			Me.xrPageInfo1.LocationFloat = New DevExpress.Utils.PointFloat(275F, 0F)
 			Me.xrPageInfo1.Name = "xrPageInfo1"
 			Me.xrPageInfo1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F)
@@ -103,8 +104,9 @@ Namespace ReportMerging
 			' 
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.PageHeader, Me.PageFooter, Me.topMarginBand1, Me.bottomMarginBand1})
 			Me.ReportPrintOptions.DetailCount = 160
-			Me.Version = "10.2"
-			CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
+			Me.ReportPrintOptions.DetailCountOnEmptyDataSource = 160
+			Me.Version = "22.2"
+			DirectCast(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
 		End Sub
 

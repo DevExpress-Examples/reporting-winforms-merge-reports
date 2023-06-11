@@ -46,7 +46,7 @@ namespace ReportMerging {
             // xrLabel1
             // 
             this.xrLabel1.BackColor = System.Drawing.Color.Silver;
-            this.xrLabel1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Times New Roman", 12F);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(275F, 0F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -58,19 +58,22 @@ namespace ReportMerging {
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrPageInfo2});
-            this.PageHeader.HeightF = 33F;
+            this.PageHeader.HeightF = 143.75F;
             this.PageHeader.Name = "PageHeader";
             this.PageHeader.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.PageHeader.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // xrPageInfo2
             // 
-            this.xrPageInfo2.BackColor = System.Drawing.Color.Silver;
-            this.xrPageInfo2.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrPageInfo2.BackColor = System.Drawing.Color.White;
+            this.xrPageInfo2.Font = new DevExpress.Drawing.DXFont("Times New Roman", 72F);
             this.xrPageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(275F, 0F);
             this.xrPageInfo2.Name = "xrPageInfo2";
             this.xrPageInfo2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrPageInfo2.SizeF = new System.Drawing.SizeF(100F, 25F);
+            this.xrPageInfo2.PageInfo = DevExpress.XtraPrinting.PageInfo.Number;
+            this.xrPageInfo2.SizeF = new System.Drawing.SizeF(180.2083F, 127.0833F);
+            this.xrPageInfo2.StylePriority.UseBackColor = false;
+            this.xrPageInfo2.StylePriority.UseFont = false;
             this.xrPageInfo2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // PageFooter
@@ -85,7 +88,7 @@ namespace ReportMerging {
             // xrPageInfo1
             // 
             this.xrPageInfo1.BackColor = System.Drawing.Color.Silver;
-            this.xrPageInfo1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.xrPageInfo1.Font = new DevExpress.Drawing.DXFont("Times New Roman", 12F);
             this.xrPageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(275F, 0F);
             this.xrPageInfo1.Name = "xrPageInfo1";
             this.xrPageInfo1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -109,7 +112,8 @@ namespace ReportMerging {
             this.topMarginBand1,
             this.bottomMarginBand1});
             this.ReportPrintOptions.DetailCount = 160;
-            this.Version = "10.2";
+            this.ReportPrintOptions.DetailCountOnEmptyDataSource = 160;
+            this.Version = "22.2";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
