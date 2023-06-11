@@ -12,15 +12,15 @@ Note that the resulting document is disposed of when the documents being merged 
 
 Combined reports:
 
-![Combined reports](Images\combine-reports.png)
+![Combined reports](Images/combine-reports.png)
 
 Merge reports:
 
-![](Images\merge-reports.png)
+![](Images/merge-reports.png)
 
 Reorder pages:
 
-![](Images\reorder-pages.png)
+![](Images/reorder-pages.png)
 ## Files to Review
 
 * [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
