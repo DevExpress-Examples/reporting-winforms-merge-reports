@@ -117,7 +117,7 @@
 			Me.Bands.AddRange(New DevExpress.XtraReports.UI.Band() { Me.Detail, Me.PageHeader, Me.PageFooter, Me.topMarginBand1, Me.bottomMarginBand1})
 			Me.PageHeight = 583
 			Me.PageWidth = 827
-			Me.PaperKind = System.Drawing.Printing.PaperKind.A5Rotated
+			Me.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A5Rotated
 			Me.ReportPrintOptions.DetailCount = 100
 			Me.ReportPrintOptions.DetailCountOnEmptyDataSource = 100
 			Me.Version = "22.2"

@@ -126,7 +126,7 @@ namespace ReportMerging {
             this.bottomMarginBand1});
             this.PageHeight = 583;
             this.PageWidth = 827;
-            this.PaperKind = System.Drawing.Printing.PaperKind.A5Rotated;
+            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A5Rotated;
             this.ReportPrintOptions.DetailCount = 100;
             this.ReportPrintOptions.DetailCountOnEmptyDataSource = 100;
             this.Version = "22.2";
